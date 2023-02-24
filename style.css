@@ -292,7 +292,7 @@ h6 {
     border-radius: 2rem;
     background-color: #f565394d;
     gap: 1rem;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease !important;
 }
 
 .edu-card:hover {
@@ -1051,36 +1051,4 @@ ion-icon {
         height: 7rem;
     }
 
-}
-
-
-/* Set the width of the scrollbar */
-::-webkit-scrollbar {
-    border: 5px solid #ccc;
-    width: 7px;
-}
-
-
-/* Set the color of the scrollbar thumb and track */
-::-webkit-scrollbar-thumb {
-    border-radius: 15px;
-    height: 80px;
-    background-color: var(--primary-color);
-    transition: all 1s ease-in-out;
-}
-
-/* Change the color of the scrollbar thumb on hover */
-::-webkit-scrollbar-thumb:hover {
-    transform: scale(1.5);
-    background-color: #555;
-    /* Change to the desired color */
-}
-
-::-webkit-scrollbar-track {
-    background-color: var(--background-color);
-}
-
-/* Hide the scrollbar corner */
-::-webkit-scrollbar-corner {
-    display: none;
 }
