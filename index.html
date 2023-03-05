@@ -579,6 +579,23 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script>
+        var count = 0;
+
+    // Check if the count is stored in local storage
+        if (localStorage.getItem('count')) {
+            count = parseInt(localStorage.getItem('count'));
+        }
+
+        // Increment the count
+        count++;
+
+        // Update the count in local storage
+        localStorage.setItem('count', count);
+
+        // Display the count on the page
+        //document.getElementById('count').textContent = count;
+        console.log("Numbe rof views are - " + count);
+        
         const downloadButton = document.querySelector('.cv-button');
 
         downloadButton.addEventListener('click', function () {
