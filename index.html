@@ -12,10 +12,24 @@
     <link rel="icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel = "icon" href = "logo.png" type = "image/x-icon">
+    <style>
+        .preloader {
+            overflow-x: hidden;
+            background: #e5eff1 url(1amw.gif) no-repeat center center;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            background-size: 15%;
+        }
+    </style>
 </head>
 
 <body>
 
+     <div class="preloader">
+
+    </div>
     <!-- Home -->
     <section class="home">
         <div class="home-div">
@@ -579,6 +593,11 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script>
+        
+        var loader = document.querySelector('.preloader');
+        window.addEventListener('load', function () {
+            loader.style.display = 'none';
+        })
         var count = 0;
 
     // Check if the count is stored in local storage
