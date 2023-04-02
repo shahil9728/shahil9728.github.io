@@ -11,13 +11,25 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-=======
     <link rel = "icon" href = "logo.png" type = "image/x-icon">
->>>>>>> 2069b8b6077de5185d830ca49d82a53f571cf89e
+    <style>
+        .preloader {
+            overflow-x: hidden;
+            background: #212121 url(1amwu.gif) no-repeat center center;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            background-size: 15%;
+        }
+    </style>
 </head>
 
 <body>
 
+     <div class="preloader">
+
+    </div>
     <!-- Home -->
     <section class="home">
         <div class="home-div">
@@ -222,7 +234,7 @@
                             <img src="exp-logo.svg" alt="" class="edu-img">
                         </div>
                         <div class="edu-content">
-                            <h3 class="edu-time">20021-2022</h3>
+                            <h3 class="edu-time">2021-2022</h3>
                             <h2 class="edu-head">Frontend Developer</h2>
                             <h2 class="edu-subhead">The Sparks Foundation</h2>
                         </div>
@@ -497,28 +509,28 @@
             </h1>
             <div class="cont-body">
                 <div class="cont-form" data-aos="fade-up">
-                    <form action="contact" class="cont" method="post">
+                    <form action="contact" class="cont" method="post" netlify>
                         <div class="input-container">
                             <label for="" class="input-label">
                                 Name
                             </label>
-                            <input type="text" name="" id="" class="cont-input" placeholder="Enter your name">
+                            <input type="text" name="name" id="" class="cont-input" placeholder="Enter your name">
                         </div>
                         <div class="input-container">
                             <label for="" class="input-label">
                                 Email
                             </label>
-                            <input type="text" name="" id="" class="cont-input" placeholder="Enter your email">
+                            <input type="text" name="eamil" id="" class="cont-input" placeholder="Enter your email">
                         </div>
                         <div class="input-container">
                             <label for="" class="input-label">
                                 Message
                             </label>
-                            <textarea name="" id="" cols="30" rows="10" class="cont-input message"
+                            <textarea name="message" id="" cols="30" rows="10" class="cont-input message"
                                 placeholder="Enter your message here....."></textarea>
                         </div>
                         <div class="send-btn-div">
-                            <button class="send-btn">
+                            <button class="send-btn" type="submit">
                                 Send
                                 <ion-icon name="send-outline" class="send-icon"></ion-icon>
                             </button>
@@ -581,6 +593,28 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script>
+        
+        var loader = document.querySelector('.preloader');
+        window.addEventListener('load', function () {
+            loader.style.display = 'none';
+        })
+        var count = 0;
+
+    // Check if the count is stored in local storage
+        if (localStorage.getItem('count')) {
+            count = parseInt(localStorage.getItem('count'));
+        }
+
+        // Increment the count
+        count++;
+
+        // Update the count in local storage
+        localStorage.setItem('count', count);
+
+        // Display the count on the page
+        //document.getElementById('count').textContent = count;
+        console.log("Numbe rof views are - " + count);
+        
         const downloadButton = document.querySelector('.cv-button');
 
         downloadButton.addEventListener('click', function () {
