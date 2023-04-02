@@ -3,8 +3,11 @@
 * {
     box-sizing: border-box;
     margin: 0 0;
-    scroll-behavior: smooth;
     padding: 0 0;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 
