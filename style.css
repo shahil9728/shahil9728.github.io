@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     margin: 0 0;
+    scroll-behavior: smooth;
     padding: 0 0;
 }
 
@@ -73,12 +74,77 @@ h6 {
 
 .profile-img {
     position: absolute;
-    top: 15%;
-    left: 50%;
-    max-width: 90%;
     height: auto;
     border-radius: 50%;
 }
+
+
+.thecard {
+    cursor: pointer;
+    top: 15%;
+    left: 50%;
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    transition: 0.5s all ease;
+    color: white;
+    border: 1px solid white;
+}
+
+.front {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.back-icon {
+    margin-top: 1rem;
+    transform: rotate(-45deg);
+}
+
+.back-icon:hover {
+    background-position: right center;
+    transform: translate(10px, -10px) rotate(-45deg);
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+
+
+
 
 
 .social-icons {
@@ -195,9 +261,20 @@ h6 {
     }
 
     .profile-img {
-        top: 30%;
+        top: 0%;
     }
 
+    .thecard {
+        top: 25%;
+        left: 30%;
+        width: 15rem;
+        height: 15rem;
+    }
+    
+    .back
+    {
+        font-size: 2rem;
+    }
     .right-content {
         padding: 0rem;
     }
@@ -529,7 +606,7 @@ h6 {
     border-radius: 50%;
     padding: 1rem;
     align-self: flex-end;
-    color:var(--primary-color);
+    color: var(--primary-color);
     background-color: #212121b3;
 }
 
@@ -982,11 +1059,24 @@ ion-icon {
 
     .profile-img {
         border: 0.4rem solid var(--background-color);
-        top: 50%;
+        /* top: 50%;
         left: 30%;
-        width: 50%;
+        width: 50%; */
     }
 
+    .thecard {
+        font-size: 1.5rem;
+        left: 30%;
+        top: 50%;
+        width: 10rem;
+        height: 10rem;
+    }
+
+    
+    .back
+    {
+        font-size: 1rem;
+    }
 
     .home-left {
         flex: initial;

@@ -11,7 +11,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel = "icon" href = "logo.png" type = "image/x-icon">
+    <link rel="icon" href="logo.png" type="image/x-icon">
     <style>
         .preloader {
             overflow-x: hidden;
@@ -27,7 +27,7 @@
 
 <body>
 
-     <div class="preloader">
+    <div class="preloader">
 
     </div>
     <!-- Home -->
@@ -38,7 +38,17 @@
                     <img src="sign.png" alt="sign" class="sign">
                 </div>
                 <div class="profile-div">
-                    <img src="profile.jpeg" alt="Profile" class="profile-img">
+                    <a href="#contact">
+                        <div class="thecard">
+                            <div class="front">
+                                <img src="profile.jpeg" alt="" class="profile-img">
+                            </div>
+                            <div class="back">
+                                <h1>Hire Me</h1>
+                                <ion-icon name="arrow-forward-outline" class="back-icon"></ion-icon>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/shahil-kumar-a56246240/" target="_blank"
@@ -276,7 +286,7 @@
                             <div class="btn-img play">
                             </div>
                         </a>
-                        <a href="https://github.com/Shahil9728/Gold-GYM" target="_blank"  class="project-link">
+                        <a href="https://github.com/Shahil9728/Gold-GYM" target="_blank" class="project-link">
                             <div class="btn-img code">
                             </div>
                         </a>
@@ -302,11 +312,11 @@
                         <img src="confession.png" alt="" class="project-img">
                     </div>
                     <div class="project-btn">
-                        <a href="https://confession.onrender.com/"  target="_blank" class="project-link">
+                        <a href="https://confession.onrender.com/" target="_blank" class="project-link">
                             <div class="btn-img play">
                             </div>
                         </a>
-                        <a href="https://github.com/Shahil9728/Confession"  target="_blank" class="project-link">
+                        <a href="https://github.com/Shahil9728/Confession" target="_blank" class="project-link">
                             <div class="btn-img code">
                             </div>
                         </a>
@@ -330,11 +340,11 @@
                         <img src="price.png" alt="" class="project-img">
                     </div>
                     <div class="project-btn">
-                        <a href="https://price-comparisor.onrender.com/"  target="_blank" class="project-link">
+                        <a href="https://price-comparisor.onrender.com/" target="_blank" class="project-link">
                             <div class="btn-img play">
                             </div>
                         </a>
-                        <a href="https://github.com/Shahil9728/PriceComparisor"  target="_blank" class="project-link">
+                        <a href="https://github.com/Shahil9728/PriceComparisor" target="_blank" class="project-link">
                             <div class="btn-img code">
                             </div>
                         </a>
@@ -355,10 +365,10 @@
                 <button class="btn view-btn">
                     View All
                     <a href="https://github.com/Shahil9728" style="text-decoration:none;color:black" target="_blank">
-                    <ion-icon name="arrow-forward-outline" class="view-icon"></ion-icon>
-                        </a>
+                        <ion-icon name="arrow-forward-outline" class="view-icon"></ion-icon>
+                    </a>
                 </button>
-                
+
             </div>
         </div>
     </section>
@@ -502,7 +512,7 @@
     </section>
 
     <!-- Contacts -->
-    <section>
+    <section id="contact">
         <div class="contacts skills">
             <h1 class="about-head cont-head">
                 Contacts
@@ -593,14 +603,14 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script>
-        
+
         var loader = document.querySelector('.preloader');
         window.addEventListener('load', function () {
             loader.style.display = 'none';
         })
         var count = 0;
 
-    // Check if the count is stored in local storage
+        // Check if the count is stored in local storage
         if (localStorage.getItem('count')) {
             count = parseInt(localStorage.getItem('count'));
         }
@@ -614,7 +624,7 @@
         // Display the count on the page
         //document.getElementById('count').textContent = count;
         console.log("Numbe rof views are - " + count);
-        
+
         const downloadButton = document.querySelector('.cv-button');
 
         downloadButton.addEventListener('click', function () {
