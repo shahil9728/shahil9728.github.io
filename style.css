@@ -471,11 +471,21 @@ h6 {
 
 
 .project-cards {
-    margin: 2rem;
+    margin: 2rem 2rem 1rem;
     display: grid;
     padding: 4rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 3rem;
+}
+
+.viewcard
+{
+    margin: 0rem 2rem 2rem;
+    display: grid;
+    padding: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    display: none;
 }
 
 .project-card {
@@ -494,8 +504,9 @@ h6 {
 }
 
 .project-head {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--text-color);
+    font-weight: 600;
 }
 
 
@@ -519,26 +530,26 @@ h6 {
 }
 
 .play {
-    background-image: url("play.png");
+    background-image: url("assets/play.png");
     background-size: cover;
     transition: all 0.3s ease-in-out;
 }
 
 .play:hover {
     transform: scale(1.3);
-    background-image: url("playa.png");
+    background-image: url("assets/playa.png");
     background-size: cover;
 }
 
 .code {
-    background-image: url("code.png");
+    background-image: url("assets/code.png");
     background-size: cover;
     transition: all 0.3s ease-in-out;
 }
 
 .code:hover {
     transform: scale(1.3);
-    background-image: url("codea.png");
+    background-image: url("assets/codea.png");
     background-size: cover;
 }
 

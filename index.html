@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-<!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> -->
-<!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="assets/logo.png" type="image/x-icon">
@@ -53,12 +53,12 @@
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/shahil-kumar-a56246240/" target="_blank"
                         class="social-links"><img src="assets/linkedin.png" alt="" class="social-img"></a>
-                    <a href="https://github.com/Shahil9728" target="_blank" class="social-links"><img src="assets/github.png"
-                            alt="" class="social-img"></a>
+                    <a href="https://github.com/Shahil9728" target="_blank" class="social-links"><img
+                            src="assets/github.png" alt="" class="social-img"></a>
                     <a href="https://twitter.com/ShahilV27515989" target="_blank" class="social-links"><img
                             src="assets/twitter.png" alt="" class="social-img"></a>
-                    <a href="https://www.youtube.com/" target="_blank" class="social-links"><img src="assets/youtube.png"
-                            alt="" class="social-img"></a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-links"><img
+                            src="assets/youtube.png" alt="" class="social-img"></a>
                 </div>
             </div>
             <div class="home-right">
@@ -303,7 +303,6 @@
                     </div>
 
                 </div>
-
                 <div class="project-card" data-aos="fade-up">
                     <div>
                         <h1 class="project-head">Confession</h1>
@@ -361,14 +360,103 @@
 
                 </div>
             </div>
-            <div class="view-all">
-                <button class="btn view-btn">
-                    View All
-                    <a href="https://github.com/Shahil9728" style="text-decoration:none;color:black" target="_blank">
-                        <ion-icon name="arrow-forward-outline" class="view-icon"></ion-icon>
-                    </a>
-                </button>
+            <div class="viewcard project-cards">
+                <div class="project-card" data-aos="fade-up">
+                    <div>
+                        <h1 class="project-head">TutoTube</h1>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets/tutotube.png" alt="" class="project-img">
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://tutotube.onrender.com/" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                        <a href="https://github.com/Shahil9728/TutoTube" target="_blank" class="project-link">
+                            <div class="btn-img code">
+                            </div>
+                        </a>
+                    </div>
 
+                    <div class="project-trans">
+                        <div class="project-left">
+                            The objective of this project is to utilize OpenAI to answer questions by utilizing YouTube
+                            videos.
+                        </div>
+                        <div class="project-right">
+                            OpenAI <br> Langchain <br> Pinecone <br> React Js
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project-card" data-aos="fade-up">
+                    <div>
+                        <h1 class="project-head">Traffic API</h1>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets/traffic.png" alt="" class="project-img">
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://traffic-company-api.onrender.com/" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                        <a href="https://github.com/Shahil9728/Traffic-Company-API" target="_blank"
+                            class="project-link">
+                            <div class="btn-img code">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-trans">
+                        <div class="project-left">
+                            The website is a Node.js-based platform that utilizes the pin API from the Traffic Company
+                            to retrieve the pin and Login.
+                        </div>
+                        <div class="project-right">
+                            Javascript <br> Node Js
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project-card" data-aos="fade-up">
+                    <div>
+                        <h1 class="project-head">Givestack</h1>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets/givestack.png" alt="" class="project-img">
+                    </div>
+                    <div class="project-btn">
+                        <a href="https://givestack.onrender.com/" target="_blank" class="project-link">
+                            <div class="btn-img play">
+                            </div>
+                        </a>
+                        <a href="https://github.com/Shahil9728/Givestack" target="_blank" class="project-link">
+                            <div class="btn-img code">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-trans">
+                        <div class="project-left">
+                            This website provides a secure login and registration system based on JWT (JSON Web Token)
+                            authentication.
+                        </div>
+                        <div class="project-right">
+                            MongoDb <br> Node Js <br> Bootstrap
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="view-all">
+                <button class="btn view-btn" onclick="togglediv()">
+                    View All
+                    <!-- <a href="https://github.com/Shahil9728" style="text-decoration:none;color:black" target="_blank"> -->
+                    <ion-icon name="arrow-forward-outline" class="view-icon"></ion-icon>
+                    <!-- </a> -->
+                </button>
             </div>
         </div>
     </section>
@@ -604,46 +692,41 @@
         crossorigin="anonymous"></script>
     <script>
 
+        const preloader = document.querySelector('.preloader');
+        function showload()
+        {
+            preloader.style.display='none';
+        }
+        const myTimeout = setTimeout(showload, 10000);
+
+        function togglediv() {
+            const viewcards = document.querySelector('.viewcard');
+            if (viewcards.style.display === "none") {
+                viewcards.style.display = "grid";
+            } else {
+                viewcards.style.display = "none";
+            }
+        }
         var loader = document.querySelector('.preloader');
         window.addEventListener('load', function () {
             loader.style.display = 'none';
         })
         var count = 0;
-
-        // Check if the count is stored in local storage
         if (localStorage.getItem('count')) {
             count = parseInt(localStorage.getItem('count'));
         }
-
-        // Increment the count
         count++;
-
-        // Update the count in local storage
         localStorage.setItem('count', count);
-
-        // Display the count on the page
-        //document.getElementById('count').textContent = count;
         console.log("Numbe rof views are - " + count);
 
         const downloadButton = document.querySelector('.cv-button');
 
         downloadButton.addEventListener('click', function () {
-            // create a temporary link element
             const link = document.createElement('a');
-
-            // set the href attribute to the download link
             link.setAttribute('href', 'resume.pdf');
-
-            // set the download attribute to the filename you want to save as
             link.setAttribute('download', 'Resume');
-
-            // add the link element to the page
             document.body.appendChild(link);
-
-            // click the link to initiate the download
             link.click();
-
-            // remove the link from the page
             document.body.removeChild(link);
         });
 
