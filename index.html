@@ -76,7 +76,11 @@
                     </div>
                     <div class="cv-btn">
                         <button type="submit" class="btn cv-button">Download CV</button>
-                        <button type="submit" class="btn">Contact</button>
+                        <a href="#contact">
+                            <button type="submit" class="btn">
+                                Contact
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -720,7 +724,6 @@
         console.log("Numbe rof views are - " + count);
 
         const downloadButton = document.querySelector('.cv-button');
-
         downloadButton.addEventListener('click', function () {
             const link = document.createElement('a');
             link.setAttribute('href', 'resume.pdf');
