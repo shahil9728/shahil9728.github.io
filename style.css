@@ -6,7 +6,7 @@
     padding: 0 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -21,6 +21,11 @@ html{
     --content-font-size: 1.15rem;
     --text-second: rgba(234, 234, 234, 0.8);
     ;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: var(--background-color);
 }
 
 body {
@@ -273,11 +278,11 @@ h6 {
         width: 15rem;
         height: 15rem;
     }
-    
-    .back
-    {
+
+    .back {
         font-size: 2rem;
     }
+
     .right-content {
         padding: 0rem;
     }
@@ -478,8 +483,7 @@ h6 {
     gap: 3rem;
 }
 
-.viewcard
-{
+.viewcard {
     margin: 0rem 2rem 2rem;
     display: grid;
     padding: 4rem;
@@ -1086,9 +1090,8 @@ ion-icon {
         height: 10rem;
     }
 
-    
-    .back
-    {
+
+    .back {
         font-size: 1rem;
     }
 
