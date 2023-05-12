@@ -86,6 +86,9 @@
                     </div>
                 </div>
             </div>
+            <button id="changemode">
+                <ion-icon name="moon-outline"></ion-icon>
+            </button>
         </div>
     </section>
 
@@ -698,13 +701,6 @@
         crossorigin="anonymous"></script>
     <script>
 
-        // const preloader = document.querySelector('.preloader');
-        // function showload()
-        // {
-        //     preloader.style.display='none';
-        // }
-        // const myTimeout = setTimeout(showload, 10000);
-
         function togglediv() {
             const viewcards = document.querySelector('.viewcard');
             if (viewcards.style.display === "none") {
@@ -724,7 +720,39 @@
         count++;
         localStorage.setItem('count', count);
         console.log("Numbe rof views are - " + count);
-        
+
+        var button = document.getElementById('changemode');
+        const icon = button.querySelector('ion-icon');
+        var isPrimaryColors = true;
+
+        button.addEventListener('click', function () {
+            var root = document.documentElement;
+
+            if (isPrimaryColors) {
+                icon.setAttribute('name', 'sunny-outline');
+                root.style.setProperty('--primary-color', 'rgb(100, 200, 150)');
+                root.style.setProperty('--second-color', '#DDA65Bff');
+                root.style.setProperty('--text-color', 'black');
+                root.style.setProperty('--background-color', '#F0F0F0');
+                root.style.setProperty('--text-second', '#000000');
+                root.style.setProperty('--edu-card-color', '#559b78c9');
+                root.style.setProperty('--edu-card-hover', '#468c69');
+                root.style.setProperty('--project-card', '#64c896');
+            } else {
+                icon.setAttribute('name', 'moon-outline');
+                root.style.setProperty('--primary-color', 'rgb(245, 101, 57)');
+                root.style.setProperty('--second-color', '#DDA65Bff');
+                root.style.setProperty('--text-color', 'white');
+                root.style.setProperty('--background-color', 'rgb(33, 33, 33)');
+                root.style.setProperty('--text-second', 'rgba(234, 234, 234, 0.8)');
+                root.style.setProperty('--edu-card-color', '#f565394d');
+                root.style.setProperty('--edu-card-hover', '#fa450e92');
+                root.style.setProperty('--project-card', 'rgb(255, 118, 77)');
+            }
+
+            isPrimaryColors = !isPrimaryColors;
+        });
+
         <!-- our aos data -->
         AOS.init({
             offset: 100,

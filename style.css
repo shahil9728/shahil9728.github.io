@@ -16,11 +16,13 @@ html {
     --second-color: #DDA65Bff;
     --text-color: white;
     --background-color: rgb(33, 33, 33);
+    --text-second: rgba(234, 234, 234, 0.8);
+    --edu-card-color: #f565394d;    
+    --edu-card-hover:#fa450e92;
+    --project-card:rgb(255, 118, 77);
     --heading-size: 3rem;
     --sub-heading-size: 1.3rem;
     --content-font-size: 1.15rem;
-    --text-second: rgba(234, 234, 234, 0.8);
-    ;
 }
 
 ::selection {
@@ -63,6 +65,7 @@ h6 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .home-left {
@@ -97,8 +100,8 @@ h6 {
     border-radius: 50%;
     transform-style: preserve-3d;
     transition: 0.5s all ease;
-    color: white;
-    border: 1px solid white;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
 }
 
 .front {
@@ -173,7 +176,7 @@ h6 {
 
 .social-img:hover,
 .cont-icon:hover {
-    color: white;
+    color: var(--text-color);
     transform: scale(1.2);
 }
 
@@ -181,6 +184,25 @@ h6 {
     transform: scale(1.1);
     background-color: var(--primary-color);
     color: var(--background-color);
+}
+
+#changemode
+{
+    background:none;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#changemode ion-icon
+{
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 0.3rem;
+    background-color: var(--primary-color);
 }
 
 
@@ -375,13 +397,13 @@ h6 {
     display: flex;
     flex-direction: row;
     border-radius: 2rem;
-    background-color: #f565394d;
+    background-color: var(--edu-card-color);
     gap: 1rem;
     transition: all 0.7s ease !important;
 }
 
 .edu-card:hover {
-    background-color: #fa450e92;
+    background-color: var(--edu-card-hover);
 }
 
 .edu-images {
@@ -460,7 +482,7 @@ h6 {
     justify-content: center;
     align-items: center;
     border-radius: 0.6rem;
-    box-shadow: rgb(245 101 57 / 30%) 0px 0px 30px;
+    box-shadow: var(--edu-card-color) 0px 0px 30px;
     transition: all 0.4s ease;
 }
 
@@ -502,8 +524,8 @@ h6 {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: rgb(255, 118, 77);
-    color: white;
+    background-color: var(--project-card);
+    color: var(--text-color);
     position: relative;
 }
 
@@ -566,7 +588,7 @@ h6 {
     border-top-right-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
     padding: 1rem;
-    color: white;
+    color: var(--text-color);
     top: 5rem;
     left: -15rem;
     font-size: 1rem;
@@ -584,7 +606,7 @@ h6 {
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
     padding: 1rem;
-    color: white;
+    color: var(--text-color);
     bottom: 2rem;
     right: -10rem;
     font-size: 1rem;
@@ -616,7 +638,7 @@ h6 {
 
 .view-btn:hover ion-icon {
     transform: translateX(10px);
-    color: white;
+    color: var(--text-color);
 }
 
 .view-icon {
@@ -692,7 +714,7 @@ ion-icon {
     text-align: center;
     align-items: center;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-color);
     width: 10rem;
     height: 10rem;
     border-radius: 1rem;
@@ -840,13 +862,13 @@ ion-icon {
 }
 
 .input-label {
-    color: #f56539;
+    color: var(--project-card);
     display: inline-flex;
     padding: 0 5px;
     font-size: 0.9rem;
     transform: translate(-100px, 50%);
     font-weight: 600;
-    background-color: #212121;
+    background-color: var(--background-color);
 }
 
 .cont-input {
@@ -860,12 +882,12 @@ ion-icon {
     width: 100%;
 
     resize: none;
-    color: #eaeaea;
-    border: 4px solid #f56539cc;
+    color: var(--text-color);
+    border: 4px solid var(--primary-color);
     transition: border 0.2s ease-in-out;
     font-family: var(--primaryFont);
     font-weight: 500;
-    background-color: #212121;
+    background-color: var(--background-color);
 }
 
 .message {
@@ -880,7 +902,7 @@ ion-icon {
     padding: 1.2rem;
     font-size: 1.1rem;
     background-color: var(--primary-color);
-    color: black;
+    color: var(--background-color);
     border: none;
     border-radius: 2rem;
     cursor: pointer;
@@ -890,8 +912,8 @@ ion-icon {
 
 .send-btn:hover {
     transform: scale(1.15);
-    background-color: white;
-    color: black;
+    background-color: var(--text-color);
+    color: var(--background-color);
 }
 
 .send-icon {
@@ -920,7 +942,7 @@ ion-icon {
     width: 2rem;
     height: 2rem;
     padding: 0.5rem;
-    color: black;
+    color: var(--background-color);
     stroke-width: 0px;
     cursor: pointer;
 }
@@ -1077,9 +1099,6 @@ ion-icon {
 
     .profile-img {
         border: 0.4rem solid var(--background-color);
-        /* top: 50%;
-        left: 30%;
-        width: 50%; */
     }
 
     .thecard {
@@ -1175,18 +1194,15 @@ ion-icon {
     transition: all 1s ease-in-out;
 }
 
-/* Change the color of the scrollbar thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
     transform: scale(1.5);
     background-color: #555;
-    /* Change to the desired color */
 }
 
 ::-webkit-scrollbar-track {
     background-color: var(--background-color);
 }
 
-/* Hide the scrollbar corner */
 ::-webkit-scrollbar-corner {
     display: none;
 }
