@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.2/tinycolor.min.js"></script> -->
     <link rel="icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="assets/logo.png" type="image/x-icon">
@@ -86,6 +87,9 @@
                     </div>
                 </div>
             </div>
+            <!-- <label for="baseColorInput">Base Color:</label>
+            <input type="color" id="baseColorInput">
+            <button onclick="generateShades()">Generate Shades</button> -->
             <button id="changemode">
                 <ion-icon name="moon-outline"></ion-icon>
             </button>
@@ -725,8 +729,8 @@
         const icon = button.querySelector('ion-icon');
         var isPrimaryColors = true;
 
+        var root = document.documentElement;
         button.addEventListener('click', function () {
-            var root = document.documentElement;
 
             if (isPrimaryColors) {
                 icon.setAttribute('name', 'sunny-outline');
@@ -752,6 +756,39 @@
 
             isPrimaryColors = !isPrimaryColors;
         });
+
+
+        // function generateShadesOfColor(baseColor, numShades) {
+        //     var colorArray = [];
+        //     var color = tinycolor(baseColor);
+
+        //     for (var i = 0; i < numShades; i++) {
+        //         var shade = color.clone().darken(i * (100 / numShades)).toString();
+        //         colorArray.push(shade);
+        //     }
+
+        //     return colorArray;
+        // }
+
+        // function generateShades() {
+        //     var baseColorInput = document.getElementById('baseColorInput');
+        //     var baseColor = baseColorInput.value;
+        //     var numShades = 10;
+        //     var shadesArray = generateShadesOfColor(baseColor, numShades);
+        //     root.style.setProperty('--primary-color', shadesArray[0]);
+        //     root.style.setProperty('--second-color', shadesArray[1]);
+        //     root.style.setProperty('--text-color', 'black');
+        //     root.style.setProperty('--background-color', '#f7f7f7');
+        //     root.style.setProperty('--text-second', '#000000');
+        //     root.style.setProperty('--edu-card-color', shadesArray[1]);
+        //     root.style.setProperty('--edu-card-hover', shadesArray[3]);
+        //     root.style.setProperty('--project-card',shadesArray[2]);
+
+        //     for (var i = 0; i < shadesArray.length; i++) {
+        //         var shade = shadesArray[i];
+        //         console.log(shade);
+        //     }
+        // }
 
         <!-- our aos data -->
         AOS.init({
