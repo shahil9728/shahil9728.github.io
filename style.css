@@ -259,6 +259,10 @@ h6 {
 
 
 @media(min-width: 540px) and (max-width: 900px) {
+    #myVideo
+    {
+        display: none;
+    }
     .btn {
         padding: 0.7rem;
         font-size: 0.8rem;
@@ -970,6 +974,11 @@ ion-icon {
 
 
 @media (max-width:900px) {
+
+    #myVideo
+    {
+        display: none;
+    }
 
     .input-label {
         transform: translate(-100px, 50%);

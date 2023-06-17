@@ -23,6 +23,13 @@
             z-index: 100;
             background-size: 15%;
         }
+
+        #myVideo {
+            z-index: 10;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
     </style>
 </head>
 
@@ -32,6 +39,9 @@
 
     </div>
     <!-- Home -->
+    <video id="myVideo" width="250" height="230" autoplay loop>
+        <source src="./assets/avt.webm" type="video/mp4">
+    </video>
     <section class="home">
         <div class="home-div">
             <div class="home-left">
@@ -789,6 +799,22 @@
         //         console.log(shade);
         //     }
         // }
+
+        window.onload = function () {
+            var video = document.getElementById("myVideo");
+
+            window.addEventListener('scroll', function () {
+                var scrollPosition = window.scrollY;
+                var webpageLength = document.documentElement.scrollHeight;
+                var videoDuration = video.duration;
+
+                if (webpageLength > videoDuration) {
+                    var maxScroll = webpageLength - window.innerHeight;
+                    var videoTime = (scrollPosition / maxScroll) * videoDuration;
+                    video.currentTime = videoTime;
+                }
+            });
+        };
 
         <!-- our aos data -->
         AOS.init({
