@@ -462,9 +462,9 @@ h6 {
 
 .skill-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 2rem;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
 }
 
