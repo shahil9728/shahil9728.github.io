@@ -17,9 +17,9 @@ html {
     --text-color: white;
     --background-color: rgb(33, 33, 33);
     --text-second: rgba(234, 234, 234, 0.8);
-    --edu-card-color: #f565394d;    
-    --edu-card-hover:#fa450e92;
-    --project-card:rgb(255, 118, 77);
+    --edu-card-color: #f565394d;
+    --edu-card-hover: #fa450e92;
+    --project-card: rgb(255, 118, 77);
     --heading-size: 3rem;
     --sub-heading-size: 1.3rem;
     --content-font-size: 1.15rem;
@@ -186,9 +186,8 @@ h6 {
     color: var(--background-color);
 }
 
-#changemode
-{
-    background:none;
+#changemode {
+    background: none;
     color: white;
     border: none;
     position: absolute;
@@ -197,8 +196,7 @@ h6 {
     cursor: pointer;
 }
 
-#changemode ion-icon
-{
+#changemode ion-icon {
     border-radius: 5px;
     font-size: 30px;
     padding: 0.3rem;
@@ -259,10 +257,10 @@ h6 {
 
 
 @media(min-width: 540px) and (max-width: 900px) {
-    #myVideo
-    {
+    #myVideo {
         display: none;
     }
+
     .btn {
         padding: 0.7rem;
         font-size: 0.8rem;
@@ -509,7 +507,8 @@ h6 {
     gap: 3rem;
 }
 
-.viewcard {
+.viewcard,
+.viewcard1 {
     margin: 0rem 2rem 2rem;
     display: grid;
     padding: 4rem;
@@ -975,8 +974,7 @@ ion-icon {
 
 @media (max-width:900px) {
 
-    #myVideo
-    {
+    #myVideo {
         display: none;
     }
 
@@ -1214,4 +1212,36 @@ ion-icon {
 
 ::-webkit-scrollbar-corner {
     display: none;
+}
+
+
+.p2 {
+    /* background: url('./assets/laptop.png');
+    background-position: center center;
+    background-repeat: no-repeat; */
+    /* background-size: contain; */
+    margin: 1rem 0rem 1rem 0rem !important;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+    width: 100%;
+}
+
+.p2img1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+
+.p2img2 {
+    height: auto;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 32px;
+    width: 200px;
 }
