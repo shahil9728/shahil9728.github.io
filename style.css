@@ -559,26 +559,26 @@ h6 {
 }
 
 .play {
-    background-image: url("assets/play.png");
+    background-image: url("assets/play.webp");
     background-size: cover;
     transition: all 0.3s ease-in-out;
 }
 
 .play:hover {
     transform: scale(1.3);
-    background-image: url("assets/playa.png");
+    background-image: url("assets/playa.webp");
     background-size: cover;
 }
 
 .code {
-    background-image: url("assets/code.png");
+    background-image: url("assets/code.webp");
     background-size: cover;
     transition: all 0.3s ease-in-out;
 }
 
 .code:hover {
     transform: scale(1.3);
-    background-image: url("assets/codea.png");
+    background-image: url("assets/codea.webp");
     background-size: cover;
 }
 
