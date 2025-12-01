@@ -76,36 +76,22 @@
                         </div>
                     </a>
                 </div>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/shahil-kumar-a56246240/" target="_blank" class="social-links"
-                        data-aos="fade-right" data-aos-offset="10"><img src="assets/linkedin.webp" alt=""
-                            class="social-img"></a>
-                    <a href="https://github.com/Shahil9728" target="_blank" class="social-links"><img
-                            src="assets/github.webp" alt="" class="social-img" data-aos="fade-right"
-                            data-aos-offset="20"></a>
-                    <a href="https://twitter.com/ShahilV27515989" target="_blank" class="social-links"><img
-                            src="assets/twitter.webp" alt="" class="social-img" data-aos="fade-right"
-                            data-aos-offset="30"></a>
-                    <a href="https://www.youtube.com/" target="_blank" class="social-links"><img
-                            src="assets/youtube.webp" alt="" class="social-img" data-aos="fade-right"
-                            data-aos-offset="40"></a>
+                <div class="social-icons" id="social-icons">
+                    <!-- social icons rendered dynamically -->
                 </div>
             </div>
             <div class="home-right">
                 <div class="right-content">
                     <div data-aos="fade-left">
-                        <h2 class="post">Web Developer</h2>
+                        <h2 class="post" id="post"></h2>
                     </div>
                     <div data-aos="fade-left">
-                        <h1 class="name">Shahil Kumar</h1>
+                        <h1 class="name" id="name"></h1>
                     </div>
-                    <div class="desc" data-aos="fade-left">
-                        There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds.
-                        The deep green that isn't the color of clouds, but came with these. He knew what was coming and
-                        he hoped he was prepared.
+                    <div class="desc" data-aos="fade-left" id="description">
                     </div>
                     <div class="cv-btn">
-                        <a href="./assets/Resume.pdf" download="Resume.pdf" data-aos="fade-up">
+                        <a id="download-cv" href="./assets/Resume.pdf" download="Resume.pdf" data-aos="fade-up">
                             <button type="submit" class="btn cv-button">Download CV</button>
                         </a>
                         <a href="#contact" data-aos="fade-up">
@@ -116,9 +102,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <label for="baseColorInput">Base Color:</label>
-            <input type="color" id="baseColorInput">
-            <button onclick="generateShades()">Generate Shades</button> -->
             <button id="changemode" data-aos="fade-left">
                 <ion-icon name="moon-outline"></ion-icon>
             </button>
@@ -177,37 +160,8 @@
                     Education
                 </h1>
                 <br>
-                <div class="edu-cards">
-                    <div class="edu-card" data-aos="fade-up">
-                        <div class="edu-images">
-                            <img src="assets/scholar.svg" alt="" class="edu-img">
-                        </div>
-                        <div class="edu-content">
-                            <h3 class="edu-time">2009-2019</h3>
-                            <h2 class="edu-head">Higher Secondary Education</h2>
-                            <h2 class="edu-subhead">Kendriya Viadayala Hisar Cantt</h2>
-                        </div>
-                    </div>
-                    <div class="edu-card" data-aos="fade-up">
-                        <div class="edu-images">
-                            <img src="assets/scholar.svg" alt="" class="edu-img">
-                        </div>
-                        <div class="edu-content">
-                            <h3 class="edu-time">2019-2021</h3>
-                            <h2 class="edu-head">Intermediate</h2>
-                            <h2 class="edu-subhead">Galaxy Public School</h2>
-                        </div>
-                    </div>
-                    <div class="edu-card" data-aos="fade-up">
-                        <div class="edu-images">
-                            <img src="assets/scholar.svg" alt="" class="edu-img">
-                        </div>
-                        <div class="edu-content">
-                            <h3 class="edu-time">2021-Present</h3>
-                            <h2 class="edu-head">Bachelor Of Technology</h2>
-                            <h2 class="edu-subhead">Lovely Professional University</h2>
-                        </div>
-                    </div>
+                <div class="edu-cards" id="education-cards">
+                    <!-- education cards will be generated from js/resume-data.js -->
                 </div>
             </div>
         </div>
@@ -219,87 +173,8 @@
             <h1 class="about-head skills">
                 SKILLS
             </h1>
-            <div class="skill-cards">
-                <div class="skill-card" data-aos="fade-left" data-aos-offset="30">
-                    <div class="skill-images">
-                        <img src="assets/html.webp" alt="" class="skill-img">
-                    </div>
-                    <div>
-                        <h1 class="skill-name">HTML</h1>
-                    </div>
-                </div>
-                <div class="skill-card" data-aos="fade-left" data-aos-offset="60">
-                    <div class="skill-images">
-                        <img src="assets/css.webp" alt="" class="skill-img">
-                    </div>
-                    <div>
-                        <h1 class="skill-name">CSS</h1>
-                    </div>
-                </div>
-                <div class="skill-card" data-aos="fade-left" data-aos-offset="90">
-                    <div class="skill-images">
-                        <img src="assets/javascript.webp" alt="" class="skill-img">
-                    </div>
-                    <div>
-                        <h1 class="skill-name">JAVASCRIPT</h1>
-                    </div>
-                </div>
-                <div class="skill-card" data-aos="fade-left" data-aos-offset="120">
-                    <div class="skill-images">
-                        <img src="assets/nodejs.webp" alt="" class="skill-img">
-                    </div>
-                    <div>
-                        <h1 class="skill-name">NODE JS</h1>
-                    </div>
-                </div>
-                <div class="skill-card" data-aos="fade-left" data-aos-offset="150">
-                    <div class="skill-images">
-                        <img src="assets/reactjs.webp" alt="" class="skill-img">
-                    </div>
-                    <div>
-                        <h1 class="skill-name">React Js</h1>
-                    </div>
-                </div>
-                <div class="skill-card" data-aos="fade-left" data-aos-offset="180">
-                    <div class="skill-images">
-                        <img src="assets/mongodb.webp" alt="" class="skill-img">
-                    </div>
-                    <div>
-                        <h1 class="skill-name">MongoDb</h1>
-                    </div>
-                </div>
-                <div class="skill-card" data-aos="fade-left" data-aos-offset="210">
-                    <div class="skill-images">
-                        <img src="assets/c.webp" alt="" class="skill-img">
-                    </div>
-                    <div>
-                        <h1 class="skill-name">C++</h1>
-                    </div>
-                </div>
-                <div class="skill-card" data-aos="fade-left" data-aos-offset="240">
-                    <div class="skill-images">
-                        <img src="assets/python.webp" alt="" class="skill-img">
-                    </div>
-                    <div>
-                        <h1 class="skill-name">PYTHON</h1>
-                    </div>
-                </div>
-                <div class="skill-card" data-aos="fade-left" data-aos-offset="270">
-                    <div class="skill-images">
-                        <img src="assets/tailwind.webp" alt="" class="skill-img">
-                    </div>
-                    <div>
-                        <h1 class="skill-name">Tailwind</h1>
-                    </div>
-                </div>
-                <div class="skill-card" data-aos="fade-left" data-aos-offset="300">
-                    <div class="skill-images">
-                        <img src="assets/wordpress.webp" alt="" class="skill-img">
-                    </div>
-                    <div>
-                        <h1 class="skill-name">Wordpress</h1>
-                    </div>
-                </div>
+            <div class="skill-cards" id="skills-cards">
+                <!-- skills will be injected from js/resume-data.js -->
             </div>
         </div>
     </section>
@@ -312,37 +187,8 @@
                     Experience
                 </h1>
                 <br>
-                <div class="edu-cards">
-                    <div class="edu-card" data-aos="fade-up">
-                        <div class="edu-images">
-                            <img src="assets/exp-logo.svg" alt="" class="edu-img">
-                        </div>
-                        <div class="edu-content">
-                            <h3 class="edu-time">2022-2024</h3>
-                            <h2 class="edu-head">Freelancer</h2>
-                            <!-- <h2 class="edu-subhead">The Sparks Foundation</h2> -->
-                        </div>
-                    </div>
-                    <div class="edu-card" data-aos="fade-up">
-                        <div class="edu-images">
-                            <img src="assets/exp-logo.svg" alt="" class="edu-img">
-                        </div>
-                        <div class="edu-content">
-                            <h3 class="edu-time">2021-2022</h3>
-                            <h2 class="edu-head">Frontend Developer</h2>
-                            <h2 class="edu-subhead">The Sparks Foundation</h2>
-                        </div>
-                    </div>
-                    <div class="edu-card" data-aos="fade-up">
-                        <div class="edu-images">
-                            <img src="assets/exp-logo.svg" alt="" class="edu-img">
-                        </div>
-                        <div class="edu-content">
-                            <h3 class="edu-time">2020-2021</h3>
-                            <h2 class="edu-head">CS50 Computer Science</h2>
-                            <h2 class="edu-subhead">Harvard University</h2>
-                        </div>
-                    </div>
+                <div class="edu-cards" id="experience-cards">
+                    <!-- experience will be injected from js/resume-data.js -->
                 </div>
             </div>
             <div class="about-right">
@@ -357,199 +203,9 @@
             <h1 class="about-head skills">
                 LIVE PROJECTS
             </h1>
-            <div class="project-cards">
-                <div class="project-card" data-aos="fade-left" data-aos-offset="60">
-                    <div>
-                        <h1 class="project-head">SGPM</h1>
-                    </div>
-                    <div class="project-images">
-                        <img src="assets/sgpm1.webp" style="border-radius: 10px;" alt="" class="project-img">
-                    </div>
-                    <div class="project-btn">
-                        <a href="http://sgpm.in/" target="_blank" class="project-link">
-                            <div class="btn-img play">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="project-trans">
-                        <div class="project-left">
-                            Expert Packers and Movers for Seamless Relocations Nationwide.
-                        </div>
-                        <div class="project-right">
-                            Wordpress
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="fade-left" data-aos-offset="120">
-                    <div>
-                        <h1 class="project-head">Lucknow Hastkala</h1>
-                    </div>
-                    <div class="project-images">
-                        <img src="assets/lucknowhastkala.webp" style="border-radius: 10px;" alt="" class="project-img">
-                    </div>
-                    <div class="project-btn">
-                        <a href="http://lucknowhastkala.com/" target="_blank" class="project-link">
-                            <div class="btn-img play">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="project-trans">
-                        <div class="project-left">
-                            Affordable ethnic wear for wholesalers and retailers, embodying traditional elegance and
-                            cultural essence.
-                        </div>
-                        <div class="project-right">
-                            Wordpress
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="fade-left" data-aos-offset="180">
-                    <div>
-                        <h1 class="project-head">Pinnakle Media</h1>
-                    </div>
-                    <div class="project-images">
-                        <img src="assets/pinnaklemedi.webp" style="border-radius: 10px;" alt="" class="project-img">
-                    </div>
-                    <div class="project-btn">
-                        <a href="http://pinnaklemedia.com/" target="_blank" class="project-link">
-                            <div class="btn-img play">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="project-trans">
-                        <div class="project-left">
-                            Creating captivating short videos for Instagram and YouTube, capturing moments in 15 seconds or less!
-                        </div>
-                        <div class="project-right">
-                            HTML <br> CSS <br> Javascript
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="project-card" data-aos="fade-left" data-aos-offset="180">
-                        <div>
-                            <h1 class="project-head">HFFO</h1>
-                        </div>
-                        <div class="project-images">
-                            <img src="assets/hffo2.webp" style="border-radius: 10px;" alt="" class="project-img">
-                        </div>
-                        <div class="project-btn">
-                            <a href="http://hffo.org/" target="_blank" class="project-link">
-                                <div class="btn-img play">
-                                </div>
-                            </a>
-                        </div>
-    
-                        <div class="project-trans">
-                            <div class="project-left">
-                                Charity site, feeding and sheltering the needy with compassion.
-                            </div>
-                            <div class="project-right">
-                                Wordpress
-                            </div>
-                        </div>
-                    </div> -->
+            <div class="project-cards" id="projects-cards" data-type="live">
             </div>
-            <div class="viewcard1 project-cards">
-                <div class="project-card" data-aos="fade-left" data-aos-offset="200">
-                    <div>
-                        <h1 class="project-head">Tradingster.com</h1>
-                    </div>
-                    <div class="project-images">
-                        <img src="assets/tradingster.webp" style="border-radius: 10px;" alt="" class="project-img">
-                    </div>
-                    <div class="project-btn">
-                        <a href="https://www.tradingster.com/" target="_blank" class="project-link">
-                            <div class="btn-img play">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="project-trans">
-                        <div class="project-left">
-                            Stock prices, charts, and data for informed trading decisions. Visualize market trends
-                            effortlessly.
-                        </div>
-                        <div class="project-right">
-                            React Js <br> Express Js <br> Node Js
-                        </div>
-                    </div>
-
-                </div>
-                <div class="project-card" data-aos="fade-left" data-aos-offset="250">
-                    <div>
-                        <h1 class="project-head">Kitchen Story</h1>
-                    </div>
-                    <div class="project-images">
-                        <img src="assets/kitchen.webp" style="border-radius: 10px;" alt="" class="project-img">
-                    </div>
-                    <div class="project-btn">
-                        <a href="http://kitchenstorytellers.com/" target="_blank" class="project-link">
-                            <div class="btn-img play">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="project-trans">
-                        <div class="project-left">
-                            Savor culinary delights on our delectable restaurant website.
-                        </div>
-                        <div class="project-right">
-                            Wordpress <br> CSS
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="project-card" data-aos="fade-left" data-aos-offset="250">
-                        <div>
-                            <h1 class="project-head">Tailblaze</h1>
-                        </div>
-                        <div class="project-images">
-                            <img src="assets/tailblaze.webp" style="border-radius: 10px;" alt="" class="project-img">
-                        </div>
-                        <div class="project-btn">
-                            <a href="https://tailblaze9.myshopify.com/" target="_blank" class="project-link">
-                                <div class="btn-img play">
-                                </div>
-                            </a>
-                        </div>
-    
-                        <div class="project-trans">
-                            <div class="project-left">
-                                Affordable Dog Food Delivered to Your Doorstep!
-                                Password is - Sha@123456
-                            </div>
-                            <div class="project-right">
-                                Shopify
-                            </div>
-                        </div>
-                    </div> -->
-                <div class="project-card" data-aos="fade-left" data-aos-offset="300">
-                    <div>
-                        <h1 class="project-head">Web Portfolio</h1>
-                    </div>
-                    <div class="project-images">
-                        <img src="assets/portfolio.webp" alt="" style="border-radius: 10px;" class="project-img">
-                    </div>
-                    <div class="project-btn">
-                        <a href="https://shahilkumar.netlify.app/" target="_blank" class="project-link">
-                            <div class="btn-img play">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="project-trans">
-                        <div class="project-left">
-                            Showcasing a web developer's projects, skills, and expertise through an interactive and
-                            dynamic showcase.
-                        </div>
-                        <div class="project-right">
-                            HTML <br> CSS <br> Javascript
-                        </div>
-                    </div>
-
-                </div>
+            <div class="viewcard1 project-cards" id="projects-secondary-cards" data-type="live">
             </div>
             <div class="view-all">
                 <button class="btn view-btn" onclick="togglediv1()">
@@ -575,37 +231,8 @@
                 </div>
             </div>
             <div class="about-right">
-                <div class="edu-cards">
-                    <div class="edu-card" data-aos="fade-up">
-                        <div class="edu-images">
-                            <img src="assets/exp-logo.svg" alt="" class="edu-img">
-                        </div>
-                        <div class="edu-content">
-                            <h3 class="edu-time">20021-2022</h3>
-                            <h2 class="edu-head">Devtown Certification</h2>
-                            <h2 class="edu-subhead">Python Bootcamp</h2>
-                        </div>
-                    </div>
-                    <div class="edu-card" data-aos="fade-up">
-                        <div class="edu-images">
-                            <img src="assets/exp-logo.svg" alt="" class="edu-img">
-                        </div>
-                        <div class="edu-content">
-                            <h3 class="edu-time">2022-2023</h3>
-                            <h2 class="edu-head">HackerRank</h2>
-                            <h2 class="edu-subhead">5 Star Coder</h2>
-                        </div>
-                    </div>
-                    <div class="edu-card" data-aos="fade-up">
-                        <div class="edu-images">
-                            <img src="assets/exp-logo.svg" alt="" class="edu-img">
-                        </div>
-                        <div class="edu-content">
-                            <h3 class="edu-time">2023-2024</h3>
-                            <h2 class="edu-head">Javascript for Web Development</h2>
-                            <h2 class="edu-subhead">Coursera</h2>
-                        </div>
-                    </div>
+                <div class="edu-cards" id="achievements-cards">
+                    <!-- achievements will be rendered dynamically -->
                 </div>
             </div>
         </div>
@@ -617,237 +244,11 @@
             <h1 class="about-head skills">
                 PROJECTS
             </h1>
-            <div class="project-cards">
-                <div class="project-card" data-aos="fade-left" data-aos-offset="60">
-                    <div>
-                        <h1 class="project-head">Visualio AI</h1>
-                    </div>
-                    <div class="project-images" style="margin-top: 2.5rem; margin-bottom: 2.5rem;">
-                        <img src="assets/texttoimgai.webp" alt="Text to Image AI" class="project-img">
-                    </div>
-                    <div class="project-btn">
-                        <a href="https://visualio.netlify.app/" target="_blank" class="project-link">
-                            <div class="btn-img play">
-                            </div>
-                        </a>
-                        <a href="https://github.com/Shahil9728/Visualio-frontend" target="_blank" class="project-link">
-                            <div class="btn-img code">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="project-trans">
-                        <div class="project-left">
-                            Utilizing AI, the project endeavors to translate text into engaging video content seamlessly
-                            and effectively.
-                        </div>
-                        <div class="project-right">
-                            React <br> Node Js <br> CSS <br> Ffmpeg
-                        </div>
-                    </div>
-
-                </div>
-                <div class="project-card" data-aos="fade-left" data-aos-offset="120">
-                    <div>
-                        <h1 class="project-head">Tradingster</h1>
-                    </div>
-                    <div class="project-images">
-                        <img src="assets/tradingster1.webp" alt="" class="project-img">
-                    </div>
-                    <div class="project-btn">
-                        <a href="https://tradingster.netlify.app/" target="_blank" class="project-link">
-                            <div class="btn-img play">
-                            </div>
-                        </a>
-                        <a href="https://github.com/shahil9728/Tradingster" target="_blank" class="project-link">
-                            <div class="btn-img code">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="project-trans">
-                        <div class="project-left">
-                            Providing reliable, real-time stock data. Stay informed, make smart decisions, and unlock
-                            your financial potential.
-                        </div>
-                        <div class="project-right">
-                            React Js <br> Node Js
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="fade-left" data-aos-offset="180">
-                    <div>
-                        <h1 class="project-head">TutoTube</h1>
-                    </div>
-                    <div class="project-images">
-                        <img src="assets/tutotube.webp" alt="" class="project-img">
-                    </div>
-                    <div class="project-btn">
-                        <a href="https://tutotube.onrender.com/" target="_blank" class="project-link">
-                            <div class="btn-img play">
-                            </div>
-                        </a>
-                        <a href="https://github.com/Shahil9728/TutoTube" target="_blank" class="project-link">
-                            <div class="btn-img code">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="project-trans">
-                        <div class="project-left">
-                            The objective of this project is to utilize OpenAI to answer questions by utilizing YouTube
-                            videos.
-                        </div>
-                        <div class="project-right">
-                            OpenAI <br> Langchain <br> Pinecone <br> React Js
-                        </div>
-                    </div>
-                </div>
+            <div class="project-cards" id="projects-tertiary-cards" data-type="project">
+                <!-- projects will be injected dynamically -->
             </div>
-            <div class="viewcard project-cards">
-                <!-- <div class="project-card" data-aos="fade-left" data-aos-offset="200">
-                    <div>
-                        <h1 class="project-head">Confession</h1>
-                    </div>
-                    <div class="project-images">
-                        <img src="assets/confession.webp" alt="" class="project-img">
-                    </div>
-                    <div class="project-btn">
-                        <a href="https://confession.onrender.com/" target="_blank" class="project-link">
-                            <div class="btn-img play">
-                            </div>
-                        </a>
-                        <a href="https://github.com/Shahil9728/Confession" target="_blank" class="project-link">
-                            <div class="btn-img code">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="project-trans">
-                        <div class="project-left">
-                            This project is a Confession website that allows users to confess anything annonymously.
-                        </div>
-                        <div class="project-right">
-                            Node Js <br> Javascript <br> Bootstrap
-                        </div>
-                    </div>
-
-                </div> -->
-                <div class="project-card" data-aos="fade-left" data-aos-offset="200">
-                    <div>
-                        <h1 class="project-head">React Dashboard</h1>
-                    </div>
-                    <div class="project-images">
-                        <img src="assets/reactdashbaord1.webp" alt="" class="project-img">
-                    </div>
-                    <div class="project-btn">
-                        <a href="https://reactdashboard69.netlify.app/" target="_blank" class="project-link">
-                            <div class="btn-img play">
-                            </div>
-                        </a>
-                        <a href="https://github.com/shahil9728/ReactDashboard" target="_blank" class="project-link">
-                            <div class="btn-img code">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="project-trans">
-                        <div class="project-left">
-                            Streamline admin tasks with user-friendly React.js Teacher Dashboard, empowering educators
-                            efficiently.
-                        </div>
-                        <div class="project-right">
-                            React Js <br> Javascript <br> HTML
-                        </div>
-                    </div>
-
-                </div>
-                <!-- <div class="project-card" data-aos="fade-left" data-aos-offset="250">
-                    <div>
-                        <h1 class="project-head">Traffic API</h1>
-                    </div>
-                    <div class="project-images">
-                        <img src="assets/traffic.webp" alt="" class="project-img">
-                    </div>
-                    <div class="project-btn">
-                        <a href="https://traffic-company-api.onrender.com/" target="_blank" class="project-link">
-                            <div class="btn-img play">
-                            </div>
-                        </a>
-                        <a href="https://github.com/Shahil9728/Traffic-Company-API" target="_blank"
-                            class="project-link">
-                            <div class="btn-img code">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="project-trans">
-                        <div class="project-left">
-                            The website is a Node.js-based platform that utilizes the pin API from the Traffic Company
-                            to retrieve the pin and Login.
-                        </div>
-                        <div class="project-right">
-                            Javascript <br> Node Js
-                        </div>
-                    </div>
-
-                </div> -->
-                <div class="project-card" data-aos="fade-left" data-aos-offset="250">
-                    <div>
-                        <h1 class="project-head">TourTap</h1>
-                    </div>
-                    <div class="project-images">
-                        <img src="assets/tourtap.webp" alt="" class="project-img">
-                    </div>
-                    <div class="project-btn">
-                        <a href="https://tourtap.netlify.app/" target="_blank" class="project-link">
-                            <div class="btn-img play">
-                            </div>
-                        </a>
-                        <a href="https://github.com/shahil9728/TourTap" target="_blank" class="project-link">
-                            <div class="btn-img code">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project-trans">
-                        <div class="project-left">
-                            Google Maps-like website with hotels, restaurants, attractions. Filter open/closed.
-                            Effortless exploration.
-                        </div>
-                        <div class="project-right">
-                            React Js <br> HTML <br> CSS
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="fade-left" data-aos-offset="300">
-                    <div>
-                        <h1 class="project-head">Givestack</h1>
-                    </div>
-                    <div class="project-images">
-                        <img src="assets/givestack.webp" alt="" class="project-img">
-                    </div>
-                    <div class="project-btn">
-                        <a href="https://givestack.onrender.com/" target="_blank" class="project-link">
-                            <div class="btn-img play">
-                            </div>
-                        </a>
-                        <a href="https://github.com/Shahil9728/Givestack" target="_blank" class="project-link">
-                            <div class="btn-img code">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="project-trans">
-                        <div class="project-left">
-                            This website provides a secure login and registration system based on JWT (JSON Web Token)
-                            authentication.
-                        </div>
-                        <div class="project-right">
-                            MongoDb <br> Node Js <br> Bootstrap
-                        </div>
-                    </div>
-
-                </div>
+            <div class="viewcard project-cards" data-type="project">
+                <!-- additional projects will be rendered dynamically -->
             </div>
             <div class="view-all">
                 <button class="btn view-btn" onclick="togglediv()">
@@ -993,23 +394,23 @@
                 </div>
                 <div class="cont-social" data-aos="fade-up">
                     <div class="social-div" data-aos="fade-up" data-aos-offset="30">
-                        <a href="mailto:shahilverma91383@gmail.com">
+                        <a id="contact-email-link" href="mailto:shahilverma91383@gmail.com">
                             <ion-icon name="at-outline" class="cont-icon"></ion-icon>
                         </a>
-                        <h1 class="social-subhead mail">shahilverma91383@gmail.com</h1>
+                        <h1 class="social-subhead mail" id="contact-email">shahilverma91383@gmail.com</h1>
                     </div>
                     <div class="social-div" data-aos="fade-up" data-aos-offset="60">
-                        <a href="tel:+919138300882">
+                        <a id="contact-phone-link" href="tel:+919138300882">
                             <ion-icon name="call-outline" class="cont-icon"></ion-icon>
                         </a>
-                        <h1 class="social-subhead">+91 9138300882</h1>
+                        <h1 class="social-subhead" id="contact-phone">+91 9138300882</h1>
                     </div>
                     <div class="social-div" data-aos="fade-up" data-aos-offset="90">
                         <a href="https://www.google.co.in/maps/place/Hisar,+Haryana/@29.1487089,75.6877248,11.79z/data=!4m5!3m4!1s0x391232d8011d0c37:0x1d3f0df105af1178!8m2!3d29.1491875!4d75.7216527"
                             target="_blank">
                             <ion-icon name="location-outline" class="cont-icon"></ion-icon>
                         </a>
-                        <h1 class="social-subhead">Hisar,Haryana India</h1>
+                        <h1 class="social-subhead" id="contact-location">Hisar,Haryana India</h1>
                     </div>
                     <div class="social-div social-icon" style="margin-top:3rem;">
                         <a href="https://www.instagram.com/shahil.2879/" target="_blank" data-aos="fade-right"
@@ -1144,6 +545,7 @@
             duration: 700
         });
     </script>
+    <script type="module" src="js/render.js"></script>
 </body>
 
 </html>
