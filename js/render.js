@@ -97,6 +97,7 @@ function renderExperience() {
           <h3 class="edu-time">${exp.time}</h3>
           <h2 class="edu-head">${exp.head}</h2>
           <h2 class="edu-subhead">${exp.sub || ''}</h2>
+          ${exp.desc ? `<p class="exp-desc">${exp.desc}</p>` : ''}
         </div>
       </div>`;
     container.appendChild(createElementFromHTML(html));
